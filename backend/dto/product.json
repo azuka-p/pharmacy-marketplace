@@ -1,0 +1,66 @@
+pack := 6
+unit := "i"
+
+dto.ProductGetResponse{
+    Id:             1,
+    Classification: "obat a",
+    Form:           "pil",
+    Manufacturer:   "company a",
+    Categories: []dto.ProductCategoryGetResponse{
+{
+    Id:   1,
+    Name: "cat 1",
+},
+{
+Id:   2,
+Name: "cat 2",
+},
+},
+Name:        "the allopurinol",
+GenericName: "allopurinol",
+Pharmacies: []dto.ProductPharmacyGetResponse{
+{
+Id:       1,
+Name:     "pharmacy a",
+Location: "Jakarta Selatan",
+Stock:    10,
+Price:    "25000",
+Pharmacists: []dto.ProductPharmacistGetResponse{
+{
+Id:   1,
+Name: "pharmacist a",
+},
+{
+Id:   1,
+Name: "pharmacist b",
+},
+},
+},
+{
+Id:       2,
+Name:     "pharmacy b",
+Location: "Jakarta Barat",
+Stock:    20,
+Price:    "20000",
+Pharmacists: []dto.ProductPharmacistGetResponse{
+{
+Id:   3,
+Name: "pharmacist c",
+},
+{
+Id:   4,
+Name: "pharmacist d",
+},
+},
+},
+},
+Description: "lorem ipsum",
+UnitInPack:  &pack,
+SellingUnit: &unit,
+Weight:      "1.1",
+Height:      "2.2",
+Length:      "3.3",
+Width:       "4.4",
+Image:       "https://cloudinary.com/j",
+IsActive:    true,
+}
